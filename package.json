@@ -7,7 +7,9 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "watch": "chokidar 'lib/**/*.js' 'test/**/*.js' -c 'npm test' ",
+    "dir": "ls -al"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,7 @@
     "uuid": "^2.0.2"
   },
   "devDependencies": {
-    "chokidar": "^1.5.2"
+    "chokidar": "^1.5.2",
+    "chokidar-cli": "^1.2.0"
   }
 }
